@@ -60,6 +60,9 @@ a>img{
   /* font-family: 'VT323', monospace; */
   font-family: 'Courgette', cursive;
 }
+#section_right>a{
+  margin-right: 1vw;
+}
 #section_left>h3{
   letter-spacing: 5px;
   text-align: center;
@@ -126,4 +129,38 @@ margin-left: 10vw;
 }
 span:last-of-type{
 margin-left: 15vw;
+}
+
+.onthefly{
+  background: rgba(0, 0, 0, 0.6);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.onthefly > h1{
+  font-family: 'Electrolize', sans-serif;
+  color: red;
+}
+.onthefly > img{
+  height: 80%;
+  width:50% ;
+}
+.onthefly > span {
+  position: absolute;
+  top: 2vw;
+  right: 1vw;
+  font-size: 3vw;
+  color: white;
+}
+
+.onthefly > span:hover {
+  cursor: pointer;
+}
 }
