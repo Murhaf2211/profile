@@ -7,6 +7,7 @@ body{
 main{
   background-image: url(pictures/36.jpg);
   background-repeat: no-repeat;
+  background-size:cover;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -33,12 +34,12 @@ a>img{
   text-align: center;
 }
 #section_mid{
-  margin-top: 4vw;
+  margin-top: 2vw;
   margin-left: 2vw;
   width: 40%;
 }
 #section_left{
-  margin-top: 4vw;
+  margin-top: 2vw;
   margin-left: 2vw;
   width: 40%;
   height:45vw;
@@ -46,22 +47,26 @@ a>img{
   border-style:groove;
 }
 #section_right>h2{
-  color: green;
+  color: darkblue;
+  text-shadow:2px 2px 4px white;
   font-size: 2.5vw;
   /* font-family: 'Quantico', sans-serif; */
   font-family: 'Courgette', cursive;
 }
 #section_right>h3{
   color: red;
+  text-shadow:1px 1px 2px white;
 }
 #section_right>p{
-  color: #000;
+  color: white;
+  text-shadow:1px 1px 2px lightblue;
   font-size: 1.1vw;
   /* font-family: 'VT323', monospace; */
   font-family: 'Courgette', cursive;
 }
 #section_right>a{
   margin-right: 1vw;
+  border-style: dotted;
 }
 #section_left>h3{
   letter-spacing: 5px;
@@ -76,11 +81,10 @@ a>img{
   top :10vw;
   width: 30vw;
   letter-spacing: 3px;
-  text-align: center;
   display: none;
   padding: 1vw;
   font-size: 1.5vw;
-  background-color: rgba(100, 125, 150, 0.9);
+  background-color: rgba(100, 125, 150, 0.6);
   background-position: center;
   color: white;
 }
@@ -92,9 +96,10 @@ a>img{
 }
 button{
   position: absolute;
-  top:50vw;
-  background-color:white;
+  top:48vw;
+  background-color:rgba(100, 125, 150, 0.4);
   color: red;
+  text-shadow:1px 1px 2px #000000;
   font-weight: bold;
   width: 5vw;
   border-radius: 1vw;
