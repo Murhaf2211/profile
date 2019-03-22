@@ -1,29 +1,26 @@
+
 $(document).ready(ev =>{
-  let nextB =$('#nextButt');
-  let backB =$('#backButt');;
   let paragraph1 =$('.workExper_paragraph:first-of-type');
   let paragraph2 =$('.workExper_paragraph:nth-of-type(2)');
   let paragraph3 =$('.workExper_paragraph:last-of-type');
   let counter = 0;
-  nextB.click(ev => {
+  let start =$('#startButton');
+  let mainPage =$('#mainPage');
+  let startPage =$('#startPage');
+
+  mainPage.hide();
+
+  start.click(ev =>{
     counter++;
-    $('.workExper_paragraph').hide();
     if (counter === 1) {
-    paragraph2.show();
-  }else if (counter === 2) {
-    paragraph3.show();
-  }else{
-    paragraph1.show();
-    counter = 0;
-  }
-  })
-  backB.click(ev => {
-  $('.workExper_paragraph').hide();
-  paragraph1.show();
-   counter = 0;
+     mainPage.show();
+     }else if (counter === 2) {
+     mainPage.hide();
+     counter = 0;
+   }
   })
 
- let popup = function(img ,text){
+ let popup = function(img , text){
   let newSection = document.createElement('SECTION');
   let closeSpan = document.createElement('SPAN');
   let newH1 = document.createElement('H1');
@@ -38,19 +35,31 @@ $(document).ready(ev =>{
  $(this).parent().remove();
 })
 }
-  $('#education').click( ev =>{
-    popup('ScannedImage-7','Education')
+  $('#a').click( ev =>{
+  popup('a','A+ Certificate')
   })
-  $('#projects').click( ev =>{
-    popup('code','Some Codes')
+  $('#network').click( ev =>{
+    popup('ScannedImage-4','Network+ Certificate')
   })
-  $('#certifi').click( ev =>{
-    popup('ScannedImage-4','Some Certificates')
+  $('#mcdst').click( ev =>{
+    popup('ScannedImage-6', 'MCDST Certificate')
   })
-  $('#programes').click( ev =>{
-    popup('top','Programming Languages')
+  $('#ipma').click( ev =>{
+    popup('ScannedImage-7','IPMA')
   })
-  $('#lang_special').click( ev =>{
-   popup('skills','More Skills')
+  $('#b2').click( ev =>{
+   popup('b2','B2 Certificate')
+  })
+  $('#biq').click( ev =>{
+   popup('biq','BIQ Certificate')
+  })
+  $('#dci').click( ev =>{
+   popup('dci','DCI Certificate')
+  })
+  $('#drk').click( ev =>{
+   popup('drk','DRK Certificate')
+  })
+  $('#plc').click( ev =>{
+   popup('plc','Ausbildung Certificate')
   })
 })
