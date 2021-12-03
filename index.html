@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Courgette|Electrolize|Indie+Flower|Quantico|VT323" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="profile.css">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
   <script type="text/javascript" src="profile.js"></script>
@@ -15,71 +18,69 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
   <title>My Profile</title>
 </head>
-<body>
+<body class="bg-dark">
   <section id="startPage">
-    <h1 id="Wellcom">Wellcom to mY Portfolio</h1>
-    <h3 id="startName" >Murhaf Orfali</h3>
-    <p id="startPergh">I am stil lerning Web Developer and this is my passion</p>
-    <button id="startButton">Enter Now</button>
+    <h1 id="Wellcom">Hello, i'm Murhaf</h1>
+    <div id="personal_pic"> </div>
+    <p id="startPergh">Web Developer</p>
+    <p id="startDescription">I am an ambitious person and a problem solver<br> with a passion for IT Projects and programing , and
+      <br>i like to join a team of like-minded developers.
+     </p>
+    <button id="startButton">Show More Info</button>
     <div id="contact">
-      <a href="https://www.facebook.com/murhaf.sy/" target="_blank" title="My facebook!" class="fa fa-facebook-square fa-spin  fa-2x" aria-hidden="true"></a>
+      <a href="https://github.com/Murhaf2211" target="_blank" target="_blank" title="My GitHub!" class="fa fa-github-square fa-spin text-body fa-2x" aria-hidden="true"></a>
       <a href="https://www.xing.com/profile/Murhaf_Orfali/" target="_blank" title="My XING!" class="fa fa-xing-square text-success fa-spin fa-2x" aria-hidden="true"></a>
       <a href="https://www.linkedin.com/" target="_blank" title="My Linkedin!" class="fa fa-linkedin-square fa-spin fa-2x" aria-hidden="true"></a>
-      <a href="https://github.com/Murhaf2211" target="_blank" target="_blank" title="My GitHub!" class="fa fa-github-square fa-spin text-body fa-2x" aria-hidden="true"></a>
       <a href="https://web.de/" target="_blank" target="_blank" title="My Email Address: orfali.murhaf@web.de!" class="fa fa-envelope-o text-light fa-spin fa-2x" aria-hidden="true"></a>
     </div>
-
   </section>
   <main id="mainPage">
     <div class="contain">
-      <section id="section_right">
-        <img id="personal_pic" src="pictures/n.jpg">
-        <h2>Murhaf Orfali</h2>
-        <h3>Web Developer</h3>
-        <p>I am an ambitious person and a problem solver<br> with a passion for IT Projects and programing , and
-           <br>i like to join a team of like-minded developers.
-          </p>
-      </section>
-      <section id="section_left">
+      <section id="section_carousel">
         <h3> My Work experience:</h3>
-        <div id="demo" class="carousel slide" data-ride="carousel">
+        <div id="demo" class="carousel slide " data-ride="carousel">
          <!-- Indicators -->
           <ul class="carousel-indicators">
             <li data-target="#demo" data-slide-to="0" class="active"></li>
             <li data-target="#demo" data-slide-to="1"></li>
             <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
           </ul>
         <!-- The slideshow -->
         <div class="carousel-inner">
+
          <div class="carousel-item active">
-          <p class="workExper_paragraph">10 years work experience <br>in IT Company<br> Damascus – Syria <br>
-         This Company is active in IT and Networks Solution in Syria.<br>
-         Reporting to sales Manager and creative ways to make IT technology add value to the customer
-         Business, I was responsible for:<br>
-         Build a good relationship with customers' organizations.<br>
-         Provide IT solutions by analyzing customer's need.<br>
-         Work with professional IT team to achieve goals.<br>
-         Monitoring achievements (volume & profits).</p>
-         </div>
-        <div class="carousel-item">
-         <p class="workExper_paragraph">2 years work experience <br> UAE – DUBAI <br>
-          This Company was active in sales of Electronic and IT Equipments (SAMSUNG Brand) in UAE.<br>
-          I was Responsible for:<br>
-          Lead a team of sales officer to achieve Showroom target.<br>
-          Monitoring Stock availability and send reports to the management.<br>
-          Manage the orders from warehouse to customers.<br>
-          Monitoring achievements (volume & profits). </p>
+            <p class="workExper_paragraph">3 years Learning experience <br>in Web Development <br> in Hamburg – Germany <br>
+              <br>I did a Fullstack Web Development one year Course .<br>
+              I did a lot of small Projects and web pages .<br>I did many online Couses in programing and web Development.<br>
+              Until now i still learning every day,and i do a Course in the field of Software Development.<br>
+              including a year of Theoretical and a year of intership in a specialized company. </p>
          </div>
          <div class="carousel-item">
-          <p class="workExper_paragraph">5 years work experience <br>As IT Technician <br>Damascus – Syria<br>
-          This Company was active in sales and distribution of IT Equipment in Syria.<br>
-          I was responsible for:<br>
-          Assist personnel with installation, configuration and ongoing usability of system hardware and software.<br>
-          Offer daily operations and systems support to personnel.<br>
-          Verify functionality of hardware and software components.<br>
-          Troubleshoot hardware and software issues in person, remotely and via phone.<br>
-          Assist employees with computer problems and answer their questions.<br>
-          Conduct daily network backup operations.</p>
+          <p class="workExper_paragraph">10 years work experience <br>in IT Companies<br> in Damascus – Syria <br>
+            <br>
+            Reporting to sales Manager and creative ways to make IT technology add value to the customer
+            Business, I was responsible for:<br>
+            Build a good relationship with customers' organizations.<br>
+            Provide IT solutions by analyzing customer's need.<br>
+            Work with professional IT team to achieve goals.<br>
+            Monitoring achievements (volume & profits).</p>
+        </div>
+        <div class="carousel-item">
+         <p class="workExper_paragraph">2 years work experience <br> in UAE – DUBAI <br><br>I was Responsible for:<br>
+            Lead a team of sales officer to achieve Showroom target.<br>
+            Monitoring Stock availability and send reports to the management.<br>
+            Manage the orders from warehouse to customers.<br>
+            Monitoring achievements (volume & profits). </p>
+         </div>
+         <div class="carousel-item">
+          <p class="workExper_paragraph">5 years work experience <br>As IT Technician <br>Damascus – Syria<br><br>I was responsible for:<br>
+            configuration and ongoing usability of system hardware and software.<br>
+            Offer daily operations and systems support to personnel.<br>
+            Verify functionality of hardware and software components.<br>
+            Troubleshoot hardware and software issues in person, remotely and via phone.<br>
+            Assist employees with computer problems and answer their questions.<br>
+            Conduct daily network backup operations.</p>
          </div>
         </div>
   <!-- Left and right controls -->
@@ -94,24 +95,80 @@
     </div>
 
     <section id="skills" >
+      <h3 id="certHeader">My Certificates</h3>
       <div>
-        <span id="a" title="Click to show!"><img src="pictures/a.jpg" ></span><br><br>
-        <span id="network" title="Click to show!"><img src="pictures/ScannedImage-4.jpg" ></span><br><br>
-        <span id="mcdst" title="Click to show!"><img src="pictures/ScannedImage-6.jpg" ></span><br><br>
-        <span id="ipma" title="Click to show!"><img src="pictures/ScannedImage-7.jpg" ></span><br><br>
-        <span id="b2" title="Click to show!"><img src="pictures/b2.jpg" ></span>
-        <span id="biq" title="Click to show!"><img src="pictures/biq.jpg" ></span>
-      </div>
+        <span id="php"  title="Click to show!"><img src="pictures/phpCert.jpg"></span>
+        <span id="mysql" title="Click to show!"><img src="pictures/msqlCert.jpg" ></span>
+        <span id="jq" title="Click to show!"><img  src="pictures/jqCert.jpg"></span>
+        <span id="js"  title="Click to show!"><img src="pictures/jsCert.jpg"></span>
+        <span id="css" title="Click to show!"><img src="pictures/cssCert.jpg"></span>
+        <span id="html" title="Click to show!"><img src="pictures/htmlCert.jpg"></span>
+        <span id="dci" title="Click to show!"><img src="pictures/dciCert.jpg"></span>
+       </div>
       <div>
-      <span id="dci" class="secoundRowSpan" title="Click to show!"><img src="pictures/dci.jpg" ></span>
-      <span id="drk" class="secoundRowSpan" title="Click to show!"><img src="pictures/drk.jpg" ></span>
-      <span id="plc" class="secoundRowSpan" title="Click to show!"><img src="pictures/plc.jpg" ></span>
-     </div>
+        <span id="ipma" title="Click to show!"><img src="pictures/ipmaCert.jpg" ></span><br><br>
+        <span id="a" title="Click to show!"><img src="pictures/aCert.jpg" ></span><br><br>
+        <span id="network" title="Click to show!"><img src="pictures/networkCert.jpg" ></span>
+        <span id="mcdst" title="Click to show!"><img src="pictures/mcdstCert.jpg" ></span>
+        <span id="win" title="Click to show!"><img src="pictures/winCert.jpg" ></span><br><br>
+        <span id="exel" title="Click to show!"><img src="pictures/exelCert.jpg" ></span><br><br> 
+        <span id="access" title="Click to show!"><img src="pictures/accessCert.jpg" ></span> 
+      </div>  
     </section>
-    <footer>
-      <h5>Made by Murhaf Orfali © 2019 </h5>
-    </footer>
-  </main>
+   
 
+    <div class="container contact bg-dark">
+      <div class="row">
+        <div class="col-md-3 alin-center ">
+          <div class="contact-info">
+            <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+            <h2>Contact Me</h2>
+            <h4>I would love to hear from you !</h4>
+          </div>
+        </div>
+        <div class="col-md-9 bg-dark text-light">
+          <div class="contact-form">
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="fname">First Name:</label>
+              <div class="col-sm-10">          
+              <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="lname">Last Name:</label>
+              <div class="col-sm-10">          
+              <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">Email:</label>
+              <div class="col-sm-10">
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="comment">Comment:</label>
+              <div class="col-sm-10">
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+            </div>
+            <div class="form-group">        
+              <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <hr class="my-4" id="lineInFooter">
+      <h5>Made by Murhaf Orfali © 2019 and updated © 2021 </h5>
+    </footer>
+  
+  
+  </main>
+  
 </body>
 </html>

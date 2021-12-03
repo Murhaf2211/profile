@@ -1,65 +1,82 @@
 
 $(document).ready(ev =>{
-  let paragraph1 =$('.workExper_paragraph:first-of-type');
-  let paragraph2 =$('.workExper_paragraph:nth-of-type(2)');
-  let paragraph3 =$('.workExper_paragraph:last-of-type');
+
   let counter = 0;
   let start =$('#startButton');
   let mainPage =$('#mainPage');
-  let startPage =$('#startPage');
 
   mainPage.hide();
-
   start.click(ev =>{
     counter++;
     if (counter === 1) {
      mainPage.show();
+     $("#startButton").html("Hide More Info");
      }else if (counter === 2) {
      mainPage.hide();
+     $("#startButton").html("Show More Info");
      counter = 0;
    }
   })
 
  let popup = function(img , text){
+
   let newSection = document.createElement('SECTION');
   let closeSpan = document.createElement('SPAN');
   let newH1 = document.createElement('H1');
   let pic = document.createElement('IMG');
+
   pic.src = `pictures/${img}.jpg`;
   newSection.classList.add('onthefly');
   closeSpan.innerText = 'X';
   newH1.innerText =text;
- newSection.append( closeSpan, newH1, pic);
- $('body').append(newSection);
- $('.onthefly span').click(function (ev){
- $(this).parent().remove();
-})
-}
-  $('#a').click( ev =>{
-  popup('a','A+ Certificate')
+  newSection.append( closeSpan, newH1, pic);
+
+  $('body').append(newSection);
+  $('.onthefly span').click(function (ev){
+  $(this).parent().remove();
+    })
+  }
+  
+  $('#html').click( ev =>{
+    popup('htmlCert','HTML Certificate')
   })
-  $('#network').click( ev =>{
-    popup('ScannedImage-4','Network+ Certificate')
+  $('#css').click( ev =>{
+    popup('cssCert','CSS Certificate')
   })
-  $('#mcdst').click( ev =>{
-    popup('ScannedImage-6', 'MCDST Certificate')
+  $('#js').click( ev =>{
+    popup('jsCert','JavaScript Certificate')
   })
-  $('#ipma').click( ev =>{
-    popup('ScannedImage-7','IPMA')
+  $('#jq').click( ev =>{
+    popup('jqCert','jQuery Certificate')
   })
-  $('#b2').click( ev =>{
-   popup('b2','B2 Certificate')
+  $('#mysql').click( ev =>{
+    popup('msqlCert','MYSQL Certificate')
   })
-  $('#biq').click( ev =>{
-   popup('biq','BIQ Certificate')
+  $('#php').click( ev =>{
+    popup('phpCert','PHP Certificate')
   })
   $('#dci').click( ev =>{
-   popup('dci','DCI Certificate')
+    popup('DCICert','Ausbildung Certificate')
   })
-  $('#drk').click( ev =>{
-   popup('drk','DRK Certificate')
+  $('#ipma').click( ev =>{
+    popup('ipmaCert','IPMA Certificate')
   })
-  $('#plc').click( ev =>{
-   popup('plc','Ausbildung Certificate')
+  $('#a').click( ev =>{
+   popup('aCert','A+ Certificate')
+  })
+  $('#network').click( ev =>{
+   popup('networkCert','Network+ Certificate')
+  })
+  $('#mcdst').click( ev =>{
+   popup('mcdstCert','MCDST Certificate')
+  })
+  $('#win').click( ev =>{
+    popup('winCert','Windows Certificate')
+  })
+  $('#exel').click( ev =>{
+    popup('exelCert', 'Exel Certificate')
+  })
+  $('#access').click( ev =>{
+    popup('accessCert','Excel Certificate')
   })
 })
