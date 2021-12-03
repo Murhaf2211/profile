@@ -9,8 +9,28 @@ $(document).ready(ev =>{
   start.click(ev =>{
     counter++;
     if (counter === 1) {
-     mainPage.show();
-     $("#startButton").html("Hide More Info");
+      mainPage.show();
+      $("#startButton").html("Hide More Info");
+     
+      $("form").submit(function(e) {              
+        var error = "";
+        if ($("#email").val() == "") {    
+            error += "The email field is required.<br>"   
+        }
+        if ($("#name").val() == "") {  
+            error += "The Name field is required.<br>"   
+        }
+        if ($("#message").val() == "") { 
+            error += "The Comment field is required.<br>"   
+        }
+        if (error != "") { 
+          $("#error").html('<div class="alert alert-danger" role="alert"><p><strong>There were error(s) in your form:</strong></p>' + error + '</div>');
+          return false;  
+        } else {  
+          return true; 
+        }
+      })
+
      }else if (counter === 2) {
      mainPage.hide();
      $("#startButton").html("Show More Info");
