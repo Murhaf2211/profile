@@ -20,7 +20,7 @@
 </head>
 <body class="bg-dark ">
   
-  <section id="startPage">
+  <section id="startPage"></ul>
     <h1 id="Wellcom" >Hello, i'm Murhaf</h1>
     <div id="personal_pic"> </div>
     <p id="startPergh">Web Developer</p>

@@ -3,6 +3,8 @@ html {
 }
 body{
     margin: 0;
+    padding: 0;
+    border: 0;
     text-shadow:2px 2px 4px #000000;
    
     font-family: 'Orbitron', sans-serif;
@@ -19,24 +21,22 @@ body{
 }
 #startPage{
   animation: startImg 1.5s ease-out forwards;
-  background:url(./pictures/lap.jpeg) no-repeat bottom;
+  background:url(./pictures/lap.jpeg) no-repeat ;
   background-size: cover;
   position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-  height:51vw;
+  height:100%;
   width: 100%;
-  text-align: center;
+  padding-left: 10vw;
   font-family: 'Orbitron', sans-serif;
 }
 #Wellcom{
   margin-top: 3vw;
-  margin-right: 42vw;
 }
 #Wellcom:hover{
-  font-size: 3.2vw;
   transition: 0.2s linear;
   color:whitesmoke;
   cursor:zoom-in;
@@ -47,7 +47,6 @@ body{
   border-radius:50%;
   border-style: none;
   margin-top: 1vw;
-  margin-left: 23vw;
   margin-bottom: 1vw; 
   opacity: 0.5;
   background-image: url(pictures/n.jpg);
@@ -55,26 +54,21 @@ body{
   background-size:cover;
 }
 #startPergh{
-  margin-right: 42vw;
    color:rgb(196, 139, 5);
 }
 #startPergh:hover{
-  font-size: 1.5vw;
+  font-size: 120%;
   transition: 0.8s linear;
   color:whitesmoke;
   cursor:zoom-in;
 }
-#startDescription{
-  margin-right: 40vw;
-}
 #startDescription:hover{ 
-  font-size: 1.5vw;
+  font-size: 120%;
   transition: 0.8s linear;
   color:white;
   cursor:zoom-in;
 }
 #startButton{
-  margin-right: 42vw;
   margin-top: 3vw;
   width:10vw;
   height: 3vw;
@@ -94,20 +88,19 @@ body{
   margin-bottom: 2vw;
 }
 #contact>a{
-  margin-right: 4vw;
-}
-#contact>a:first-of-type{
-  margin-left: 22vw;
+  margin-right:5vw;
+  transition:1.7s linear;
 }
 #contact>a:hover{
-  animation: none;
+  transform: rotate(360deg) ;
 }
 #mainPage{
   display:flex;
   flex-direction:column;
   width: 100%;
+  height: 100%;
   animation: startImg 0.5s ease-out forwards;
-  margin-top: 50vw;
+  margin-top: 45vw;
   font-family: 'Orbitron', sans-serif;
 }
 .contain{
@@ -143,7 +136,7 @@ a>img{
 }
 #section_carousel{
   margin-top: 2vw;
-  margin-left: 55vw;
+  margin-left: 50vw;
   width: 50%;
   
 }
@@ -159,11 +152,11 @@ a>img{
 }
 .workExper_paragraph{
   margin-left:2vw;
-  width: 35vw;
+  width: 45vw;
   height: 52vw;
   letter-spacing: 3px;
   display: none;
-  padding: 1vw;
+  padding: 3vw;
   font-size: 1.5vw;
   background-color: rgba(125, 125, 125, 0.6);
   background-position: center;
