@@ -16,12 +16,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-  <title>My Profile</title>
+  <title>Murhaf Orfali</title>
 </head>
-<body class="bg-dark ">
-  
-  <section id="startPage"></ul>
-    <h1 id="Wellcom" >Hello, i'm Murhaf</h1>
+<body class="bg-dark">
+  <section id="startPage">
+    <h1 id="Wellcom">Hello,<p>i'm Murhaf</p></h1>
     <div id="personal_pic"> </div>
     <p id="startPergh">Web Developer</p>
     <p id="startDescription">I am an ambitious person and a problem solver<br> with a passion for IT Projects and programing , and
@@ -29,7 +28,7 @@
      </p>
     <button id="startButton">Show More Info</button>
     <div id="contact">
-      <a href="https://github.com/Murhaf2211" target="_blank" title="My GitHub!" class="fa fa-github-square text-dark fa-2x" aria-hidden="true"></a>
+      <a href="https://github.com/Murhaf2211" target="_blank" title="My GitHub!" class="fa fa-github-square text-body fa-2x" aria-hidden="true"></a>
       <a href="https://www.xing.com/profile/Murhaf_Orfali/" target="_blank" title="My XING!" class="fa fa-xing-square text-success fa-2x" aria-hidden="true"></a>
       <a href="https://www.linkedin.com/" target="_blank" title="My Linkedin!" class="fa fa-linkedin-square fa-2x" aria-hidden="true"></a>
     </div>
@@ -121,8 +120,8 @@
         <div class="col-md-3 alin-center ">
           <div class="contact-info">
             <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
-            <h2>Contact Me</h2>
-            <h4>I would love to hear from you !</h4>
+            <h2 class="headOfContactForm">Contact Me</h2>
+            <h4 class="textOfContactForm">I would love to hear from you !</h4>
           </div>
         </div>
         <div class="col-md-9 bg-dark text-light">
@@ -165,7 +164,7 @@
     
     <footer>
       <hr class="my-4" id="lineInFooter">
-      <h5>Made by Murhaf Orfali © 2019 and updated © 2021 </h5>
+      <h5 class="footerText">Made by Murhaf Orfali © 2019 and updated © 2021 </h5>
     </footer>
   
   

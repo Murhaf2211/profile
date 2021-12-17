@@ -1,146 +1,163 @@
 html {
   scroll-behavior: smooth;
 }
-body{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    text-shadow:2px 2px 4px #000000;
-   
-    font-family: 'Orbitron', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  font-family: "Orbitron", sans-serif;
 }
 @keyframes startImg {
-0% {
-  opacity:0;
-  transform: translateY(-5rem);
+  0% {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
-100% {
-  opacity:1;
-  transform: none;
-}
-}
-#startPage{
+
+#startPage {
   animation: startImg 1.5s ease-out forwards;
-  background:url(./pictures/lap.jpeg) no-repeat ;
+  background: url(./pictures/lap.jpeg) no-repeat;
   background-size: cover;
   position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  height:100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 58vw;
   width: 100%;
   padding-left: 10vw;
-  font-family: 'Orbitron', sans-serif;
+
+  font-family: "Orbitron", sans-serif;
 }
-#Wellcom{
+@media only screen and (max-width: 900px) {
+  #startPage {
+    height: 100%;
+  }
+}
+
+#Wellcom {
+  font-size: 4vw;
   margin-top: 3vw;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);
 }
-#Wellcom:hover{
+#Wellcom p {
+  font-size: 2vw;
+  display: inline-block;
+  margin-left: 1vw;
+}
+#Wellcom:hover {
   transition: 0.2s linear;
-  color:whitesmoke;
-  cursor:zoom-in;
+  color: whitesmoke;
+  cursor: zoom-in;
 }
-#personal_pic{
+#personal_pic {
   width: 10vw;
-  height:10vw;
-  border-radius:50%;
+  height: 10vw;
+  border-radius: 50%;
   border-style: none;
   margin-top: 1vw;
-  margin-bottom: 1vw; 
+  margin-bottom: 1vw;
   opacity: 0.5;
   background-image: url(pictures/n.jpg);
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
 }
-#startPergh{
-   color:rgb(196, 139, 5);
+#startPergh {
+  font-size: 1.5vw;
+  color: rgb(196, 139, 5);
 }
-#startPergh:hover{
-  font-size: 120%;
+#startPergh:hover {
+  font-size: 1.7vw;
   transition: 0.8s linear;
-  color:whitesmoke;
-  cursor:zoom-in;
+  color: whitesmoke;
+  cursor: zoom-in;
 }
-#startDescription:hover{ 
-  font-size: 120%;
+#startDescription {
+  font-size: 1.3vw;
+}
+#startDescription:hover {
+  font-size: 1.5vw;
   transition: 0.8s linear;
-  color:white;
-  cursor:zoom-in;
+  color: white;
+  cursor: zoom-in;
 }
-#startButton{
+#startButton {
   margin-top: 3vw;
-  width:10vw;
+  width: 10vw;
   height: 3vw;
   background-color: black;
   border-radius: 0.5vw;
   color: white;
   font-size: 1vw;
 }
-#startButton:hover{
+#startButton:hover {
   background-color: rgb(196, 139, 5);
   color: black;
   cursor: pointer;
 }
-#contact{
+#contact {
   display: flex;
   margin-top: 5vw;
-  margin-bottom: 2vw;
 }
-#contact>a{
-  margin-right:5vw;
-  transition:1.7s linear;
+#contact > a {
+  margin-right: 5vw;
+  transition: 1.7s linear;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);
+  font-size: 2.5vw;
 }
-#contact>a:hover{
-  transform: rotate(360deg) ;
+#contact > a:hover {
+  transform: rotate(360deg);
 }
-#mainPage{
-  display:flex;
-  flex-direction:column;
+#mainPage {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
   animation: startImg 0.5s ease-out forwards;
-  margin-top: 45vw;
-  font-family: 'Orbitron', sans-serif;
+  margin-top: 58vw;
+  font-family: "Orbitron", sans-serif;
 }
-.contain{
+.contain {
   background-image: url(pictures/background1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 65vw;
-  margin-top: 1vw;
 }
-span>img{
-  height:6vw;
+span > img {
+  height: 6vw;
   width: 6vw;
   border-radius: 1vw;
-  border-style:groove;
+  border-style: groove;
 }
-a>img{
-  height:2vw;
+a > img {
+  height: 2vw;
   width: 2vw;
 }
-#skills{
+#skills {
   background-image: url(pictures/photo8.jpg);
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   width: 100%;
-  height:53vw;
+  height: 55vw;
   display: flex;
   flex-direction: column;
   padding-bottom: 2vw;
 }
-#skills>div{
+#skills > div {
   display: flex;
 }
-#section_carousel{
+#section_carousel {
   margin-top: 2vw;
   margin-left: 50vw;
   width: 50%;
-  
 }
-#section_carousel>h3{
+#section_carousel > h3 {
   margin-bottom: 3vw;
   margin-top: 5vw;
   margin-right: 10vw;
@@ -150,8 +167,8 @@ a>img{
   font-size: bold;
   color: rgb(196, 139, 5);
 }
-.workExper_paragraph{
-  margin-left:2vw;
+.workExper_paragraph {
+  margin-left: 2vw;
   width: 45vw;
   height: 52vw;
   letter-spacing: 3px;
@@ -162,46 +179,47 @@ a>img{
   background-position: center;
   color: white;
 }
-.workExper_paragraph:first-of-type{
+.workExper_paragraph:first-of-type {
   display: block;
 }
 
-span:hover{
+span:hover {
   cursor: pointer;
 }
-#certHeader{
-  margin-top: 2vw;
+#certHeader {
+  margin-top: 3vw;
   letter-spacing: 5px;
+  font-weight: bold;
   text-decoration: underline;
-  text-shadow:2px 2px 4px rgb(36, 35, 35);
+  text-shadow: 2px 2px 4px rgb(36, 35, 35);
   font-size: 2vw;
   align-self: center;
   transition: 0.2s linear;
   color: rgb(196, 139, 5);
 }
-span>img {
-  height:5vw;
+span > img {
+  height: 5vw;
   width: 5vw;
 }
-span>img:hover {
-  height:7vw;
+span > img:hover {
+  height: 7vw;
   width: 7vw;
-  transition:0.2s linear ;
+  transition: 0.2s linear;
 }
-span:first-of-type{
+span:first-of-type {
   margin-left: 25vw;
 }
-span{
+span {
   margin-top: 3vw;
   margin-left: 2.5vw;
 }
-.secoundRowSpan{
+.secoundRowSpan {
   margin-top: 3vw;
 }
-.onthefly{
+.onthefly {
   background: rgba(0, 0, 0, 0.6);
   animation: startImg 0.7s ease-out forwards;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -212,21 +230,22 @@ span{
   top: 0;
   left: 0;
 }
-.onthefly > h1{
-  font-family: 'Electrolize', sans-serif;
-  color: #842525;
+.onthefly > h1 {
+  font-family: "Electrolize", sans-serif;
+  color: rgb(196, 139, 5);
+  margin-bottom: 2vw;
 }
-.onthefly > img{
+.onthefly > img {
   height: 80%;
-  width:50% ;
+  width: 50%;
 }
-.onthefly > embed{
+.onthefly > embed {
   height: 80%;
-  width:50% ;
+  width: 50%;
 }
 .onthefly > span {
   position: absolute;
-  top: -5vw;
+  top: -3vw;
   right: 15vw;
   font-size: 3vw;
   color: white;
@@ -235,51 +254,68 @@ span{
   cursor: pointer;
 }
 
-.contact{
+.contact {
   padding: 4%;
-  
+  font-size: 1.2vw;
 }
-.col-md-3{
+.headOfContactForm {
+  font-size: 2vw;
+}
+.textOfContactForm {
+  font-size: 1.5vw;
+}
+.col-md-3 {
   background: rgb(196, 139, 5);
   color: white;
   padding: 4%;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
 }
-.contact-info{
-  margin-top:10%;
+.contact-info {
+  margin-top: 10%;
+  height: 20vw;
+  width: 15vw;
 }
-.contact-info img{
+.contact-info img {
   margin-bottom: 15%;
+  height: 3vw;
+  width: 4vw;
 }
-.contact-info h2{
+.contact-info h2 {
   margin-bottom: 10%;
 }
-.col-md-9{
+.col-md-9 {
   background: rgb(255, 255, 255);
   padding: 3%;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
-.contact-form label{
-  font-weight:600;
+.contact-form label {
+  font-weight: 600;
 }
-.contact-form button{
+.contact-form input {
+  font-size: 1vw;
+}
+.contact-form button {
   background: rgb(196, 139, 5);
   color: white;
   font-weight: 600;
   width: 25%;
+  font-size: 1.2vw;
 }
-.contact-form button:focus{
-  box-shadow:none;
+.contact-form button:focus {
+  box-shadow: none;
 }
 
-footer{
-  
-  padding-top:2vw;
+footer {
+  padding-top: 2vw;
   padding-bottom: 2vw;
   justify-content: center;
   text-align: center;
   background: rgb(52, 58, 64);
   color: #494444;
+  text-shadow: 1px 1px 1px rgb(247, 247, 244);
+}
+.footerText {
+  font-size: 1.2vw;
 }
